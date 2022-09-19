@@ -1,0 +1,316 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 27 and seed -6717000211786548610 with 4 workers on 8 cores with 2363MB heap and 5312MB offheap memory [pid: 178998] (Linux 5.19.9-200.fc36.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/jstrunk/src/tlaplus/tla-kcp-storage/kcpStorage.toolbox/Model_1/MC.tla
+Parsing file /home/jstrunk/src/tlaplus/tla-kcp-storage/kcpStorage.toolbox/Model_1/kcpStorage.tla
+Warning: symbols were renamed.
+Parsing file /home/jstrunk/src/tlaplus/toolbox/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /home/jstrunk/src/tlaplus/toolbox/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /home/jstrunk/src/tlaplus/toolbox/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /home/jstrunk/src/tlaplus/toolbox/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module kcpStorage
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-09-19 11:39:39)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-09-19 11:39:41.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant Invariants is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ ns = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Start_ line 118, col 11 to line 125, col 43 of module kcpStorage>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ ns = (C1 :> "Sync" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Start line 136, col 16 to line 139, col 41 of module kcpStorage>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "Sync" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ ns = (C1 :> "Sync" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Start_ line 118, col 11 to line 125, col 43 of module kcpStorage>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "Sync" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ ns = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Start_ line 118, col 11 to line 125, col 43 of module kcpStorage>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "Sync" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ ns = (C1 :> "nil" @@ C2 :> "Sync" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Start line 136, col 16 to line 139, col 41 of module kcpStorage>
+/\ pvc = (C1 :> "nil" @@ C2 :> "nil" @@ C3 :> "nil")
+/\ pvc_state = (C1 :> "Sync" @@ C2 :> "Sync" @@ C3 :> "nil")
+/\ ns = (C1 :> "nil" @@ C2 :> "Sync" @@ C3 :> "nil")
+/\ pc = ( C1 :> "Start" @@
+  C2 :> "Start" @@
+  C3 :> "Start" @@
+  NC :> "Start_" @@
+  PVCC :> "Start_P" )
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-09-19 11:39:41
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 109, col 1 to line 109, col 4 of module kcpStorage>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 110, col 9 to line 116, col 72 of module kcpStorage: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Start_ line 118, col 1 to line 118, col 6 of module kcpStorage>: 9:34
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 14 to line 118, col 30 of module kcpStorage: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 118, col 14 to line 118, col 19 of module kcpStorage: 20
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 39 to line 119, col 51 of module kcpStorage: 68
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 119, col 39 to line 119, col 43 of module kcpStorage: 47
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 29 to line 119, col 36 of module kcpStorage: 20
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 22 to line 121, col 52 of module kcpStorage: 21
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 29 to line 120, col 36 of module kcpStorage: 7
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 22 to line 123, col 51 of module kcpStorage: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 122, col 29 to line 122, col 60 of module kcpStorage: 20:33
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 122, col 46 to line 122, col 59 of module kcpStorage: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 122, col 36 to line 122, col 43 of module kcpStorage: 20
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 14 to line 124, col 47 of module kcpStorage: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 14 to line 125, col 43 of module kcpStorage: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Start_P line 129, col 1 to line 129, col 7 of module kcpStorage>: 2:17
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 15 to line 129, col 34 of module kcpStorage: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 129, col 15 to line 129, col 22 of module kcpStorage: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 15 to line 130, col 23 of module kcpStorage: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 15 to line 131, col 51 of module kcpStorage: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 132, col 15 to line 132, col 43 of module kcpStorage: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Start line 136, col 1 to line 136, col 11 of module kcpStorage>: 7:45
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 136, col 19 to line 136, col 36 of module kcpStorage: 86
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 136, col 19 to line 136, col 26 of module kcpStorage: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 19 to line 137, col 68 of module kcpStorage: 41
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 32 to line 137, col 68 of module kcpStorage: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 19 to line 138, col 53 of module kcpStorage: 41
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 138, col 25 to line 138, col 53 of module kcpStorage: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 19 to line 139, col 41 of module kcpStorage: 41
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 144, col 1 to line 144, col 11 of module kcpStorage>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 144, col 19 to line 144, col 56 of module kcpStorage: 11
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 145, col 19 to line 145, col 32 of module kcpStorage: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Invariants line 177, col 1 to line 177, col 10 of module kcpStorage>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 178, col 5 to line 181, col 28 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 178, col 8 to line 178, col 13 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 163, col 5 to line 165, col 47 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 163, col 8 to line 163, col 27 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 165, col 8 to line 165, col 47 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 165, col 28 to line 165, col 47 of module kcpStorage: 57
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 165, col 17 to line 165, col 25 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 179, col 8 to line 179, col 29 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 168, col 27 to line 168, col 81 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 168, col 27 to line 168, col 74 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 168, col 39 to line 168, col 73 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 168, col 40 to line 168, col 72 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 168, col 59 to line 168, col 72 of module kcpStorage: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 168, col 49 to line 168, col 56 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 8 to line 180, col 30 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 171, col 28 to line 171, col 83 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 171, col 28 to line 171, col 76 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 171, col 40 to line 171, col 75 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 171, col 41 to line 171, col 74 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 171, col 60 to line 171, col 74 of module kcpStorage: 27
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 171, col 50 to line 171, col 57 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 8 to line 181, col 28 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 174, col 26 to line 174, col 84 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 174, col 26 to line 174, col 77 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 174, col 38 to line 174, col 76 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 174, col 55 to line 174, col 75 of module kcpStorage: 57
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 174, col 45 to line 174, col 52 of module kcpStorage: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(10) at 2022-09-19 11:39:41: 83 states generated (2,289 s/min), 19 distinct states found (524 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+83 states generated, 19 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 10.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 2185ms at (2022-09-19 11:39:41)
+@!@!@ENDMSG 2186 @!@!@
